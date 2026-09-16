@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagebeziehungen Vogelschutzgebiet</title>
+    <!--LaTeX Einbindung für mathematische Darstellungen-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!--Ausgelagertes Design und Skript, gemeinsam für alle Kartensets-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/hints.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Vogelschutzgebiet</h1>
+    <p>Wähle eine Aufgabe aus und drücke auf den Knopf "Nächster Hinweis". Überlege erst bevor du dir einen weiteren Hinweis anschaust.</p>
+
+    <!-- Auswahl der Aufgaben -->
+    <button class="button" onclick="showHints('task1')">Aufgabe 1</button>
+    <button class="button" onclick="showHints('task2')">Aufgabe 2</button>
+    <button class="button" onclick="showHints('task3')">Aufgabe 3</button>
+    <button class="button" onclick="showHints('task4')">Aufgabe 4</button>
+
+    <!-- Hilfekarte für Aufgabe 1 -->
+    <div id="task1" class="task" style="display: none;">
+        <h2>Aufgabe 1</h2>
+        <p>Stelle eine Ebenengleichung für das Vogelschutzgebiet auf. Beschränke die Fläche der Ebene, indem du das Intervall der Parameter \(r\) und \(s\) angibst. </p>
+        <div class="hint">Hinweis 1:
+            Was benötigst du um eine Ebenengleichung aufzustellen?
+        </div>
+        <div class="hint">Hinweis 2: Aus der Skizze kannst du die Eckpunkte des Rechtecks ablesen. Nutze sie, um eine Ebenengleichung aufzustellen.</div>
+        <div class="hint">Hinweis 3: Wähle einen der Eckpunkte als Stützvektoren und berechne mit diesem und zwei weiteren Punkten die Spannvektoren \(u\) und \(v\).</div>
+        <div class="hint">Hinweis 4: Schaue dir die Strecke \(\overline{P_1P_2}\) an, um den Parameter \(r\) zu bestimmen. Sie liegt parallel zur \(x_1\)-Achse.Welche Werte darf \(r\) annehmen, damit alle Punkte zwischen \(P_1\) und \(P_2\) auf der Strecke liegen?</div>
+        <div class="hint">Hinweis 5: Betrachte dazu die \(x_1\)-Koordinate. </div>
+        <div class="hint">Hinweis 6: Gehe für den Parameter \(s\) analog vor. Hier kannst du zum Beispiel die Strecke \(\overline{P_1P_4}\) nutzen.</div>
+        <button class="button" onclick="showNextHint('task1')">Nächster Hinweis</button>
+    </div>
+
+    <!-- Hilfekarte für Aufgabe 2 -->
+    <div id="task2" class="task" style="display: none;">
+        <h2>Aufgabe 2</h2>
+        <p>Ein Flugzeug startet im Punkt \(F_1(0|10|3)\) und fliegt annähernd geradlinig in Richtung des Punktes \(F_2(2|9|4)\). Gib die zugehörige Geradengleichung des Flugzeuges an. </p>
+        <div class="hint">Hinweis 1: Für eine Geradengleichung benötigst du einen Stütz- und einen Richtungsvektor. </div>
+        <div class="hint">Hinweis 2: Wähle einen der Punkte als Stützvektor. Nutze den zweiten um den Richtungsvektor zu bilden.</div>
+        <button class="button" onclick="showNextHint('task2')">Nächster Hinweis</button>
+    </div>
+
+    <!-- Hilfekarte für Aufgabe 3 -->
+    <div id="task3" class="task" style="display: none;">
+        <h2>Aufgabe 3</h2>
+        <p>Prüfe mit einer Rechnung, ob das Flugzeug über das Vogelschutzgebiet fliegt.</p>
+        <div class="hint">Hinweis 1: Die Flughöhe ist nicht relevant. Welche Koordinate beschreibt die Höhe? Du darfst sie in deiner Rechnung vernachlässigen.</div>
+        <div class="hint">Hinweis 2: Setze die Geradengleichung und die Ebenengleichung gleich, um die Lagebeziehung zu prüfen.</div>
+        <div class="hint">Hinweis 3: Stelle ein LGS auf, um die Parameter zu bestimmen. Nutze dafür die \(x_1\)- und \(x_2\)-Koordinaten der Vektoren.</div>
+        <div class="hint">Hinweis 4: Wenn du das LGS mit dem Taschenrechner lösen möchtest, forme es so um, dass auf einer Seite der Gleichungen nur die Parameter \(t,r,s\) stehen.</div>
+        <div class="hint">Hinweis 5: Finde in der Lösung eine Gleichung, die nur von den Parametern \(r\) und \(s\) abhängt. Nutze dann aus, dass beide Parameter nur bestimmte Werte annehmen dürfen, da die Ebene beschränkt ist.</div>
+        <div class="hint">Hinweis 6: Setze zum Beispiel für \(r\) die Grenzwerte \(0\) und \(1\) ein. Liegt \(s\) dann noch im Intervall welches du in Aufgabe 1 bestimmt hast?</div>
+        <button class="button" onclick="showNextHint('task3')">Nächster Hinweis</button>
+    </div>
+
+    <!-- Hilfekarte für Aufgabe 4 -->
+    <div id="task4" class="task" style="display: none;">
+        <h2>Aufgabe 4</h2>
+        <p>Finde eine weitere Lösung für Aufgabe 3.</p>
+        <div class="hint">Hinweis 1: Wie kannst du das Problem aus Aufgabe 3 geometrisch lösen?</div>
+        <div class="hint">Hinweis 2: Nutze aus, dass du die \(x_3\)-Koordinate für Aufgabe 3 vernachlässigen darfst.</div>
+        <div class="hint">Hinweis 3: Du kannst die Aufgabe graphisch lösen. Fertige eine graphische Lösung an.</div>
+        <button class="button" onclick="showNextHint('task4')">Nächster Hinweis</button>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head> <!--Metadaten werden im Head des Dokuments festgelegt-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brechung und Reflexion</title>
+    <!--LaTeX Einbindung für mathematische Darstellungen-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+    <!--Simpel gehaltenes Design. Nur Text und Buttons-->
+        body {
+            <!--font-family: Arial, sans-serif;-->
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+        .hint {
+            display: none;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .hint.visible {
+            display: block;
+        }
+    </style>
+    <script>
+        function showHints(taskId) {
+            // Verstecke alle Aufgabeninhalte. Damit bleiben die Hinweise nicht offen.
+            document.querySelectorAll('.task').forEach(task => task.style.display = 'none');
+            // Setze alle Hinweise zurück
+            document.querySelectorAll('.hint').forEach(hint => hint.classList.remove('visible'));
+            // Zeige die gewählte Aufgabe an
+            document.getElementById(taskId).style.display = 'block';
+        }
+
+        function showNextHint(taskId) {
+            const hints = document.querySelectorAll(`#${taskId} .hint`);
+            for (let i = 0; i < hints.length; i++) {
+                if (!hints[i].classList.contains('visible')) {
+                    hints[i].classList.add('visible');
+                    break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Brechung und Reflexion</h1>
+    <p>Wähle eine Aufgabe aus und drücke auf den Knopf "Nächster Hinweis". Überlege erst bevor du dir einen weiteren Hinweis anschaust.</p>
+
+    <!-- Auswahl der Aufgaben -->
+    <button class="button" onclick="showHints('task2')">Aufgabe 2</button>
+    <button class="button" onclick="showHints('task3')">Aufgabe 3</button>
+    <button class="button" onclick="showHints('task4')">Aufgabe 4</button>
+
+    <!-- Hilfekarte für Aufgabe 2 -->
+    <div id="task2" class="task" style="display: none;">
+        <h2>Aufgabe 2</h2>
+        <!--Beschriftung der Aufgabe durch Bild-->
+        <img src="img/BrRef2.jpg" width="550">
+        <!-- Für Text statt Bild: <p>Zeichne den weiteren Lichtweg durch eine 1 cm dicke Glasplatte unter Berücksichtigung der Brechung an beiden Grenzflächen.</p>-->
+        <div class="hint">Hinweis 1: 
+            Gehe in mehreren Schritten vor. Zeichne zuerst den Übergang von Luft nach Glas ein.
+            </div>
+        <div class="hint">Hinweis 2: Beim Übergang Luft → Glas wird der Lichtstrahl zum Lot hin gebrochen. Wie groß ist der Brechungswinkel \(\beta\)?</div>
+        <div class="hint">Hinweis 3: Nutze das Brechungsdiagramm auf Seite 37 um den Brechungswinkel zu bestimmen.</div>
+        <div class="hint">Hinweis 4: Zeichne das Lot ein und messe den Winkel beim Übergang Glas → Luft.</div>
+        <div class="hint">Hinweis 5: Bestimme den Brechungswinkel \(\beta\) beim Übergang Glas → Luft.</div>
+        <button class="button" onclick="showNextHint('task2')">Nächster Hinweis</button>
+    </div>
+
+    <!-- Hilfekarte für Aufgabe 3 -->
+    <div id="task3" class="task" style="display: none;">
+        <h2>Aufgabe 3</h2>
+        <img src="img/BrRef3.jpg" width="550">
+        <div class="hint">Hinweis 1: Messe den Winkel \(\alpha\). Die Umgebung ist die Luft. Kommt es zur Totalreflexion?</div>
+        <div class="hint">Hinweis 2: Ab welchem Grenzwinkel kommt es beim Übergang Glas → Luft zur Totalreflexion? Nutze das Brechungsdiagramm auf S. 37</div>
+        <div class="hint">Hinweis 3: Das Licht wird mehrfach total reflektiert bevor es auf den Sensor trifft. Hierbei gilt das Reflexionsgesetz. Wie groß ist dann der Reflexionswinkel \(\alpha'\) ?</div>
+        <div class="hint">Hinweis 4: Zeichne den Sensor ein. Genau wie die Lichtquelle ist er direkt an der Frontscheibe platziert.</div>
+        <button class="button" onclick="showNextHint('task3')">Nächster Hinweis</button>
+    </div>
+
+    <!-- Hilfekarte für Aufgabe 4 -->
+    <div id="task4" class="task" style="display: none;">
+        <h2>Aufgabe 4</h2>
+        <img src="img/BrRef4.jpg" width="550">
+        <div class="hint">Hinweis 1: Der Regentropfen kann an mehreren Stellen eingezeichnet werden. Er darf sehr groß sein.</div>
+        <div class="hint">Hinweis 2: Was hat sich verändert? Handelt es sich noch um einen Übergang Glas → Luft</div>
+        <div class="hint">Hinweis 3: Durch den Regentropfen kommt es zu einem Übergang Glas → Wasser. Gibt es immer noch Totalreflexion?
+        <!--Youtube Videos lassen sich durch den Befehl iframe oder die Funktion direkt bei YouTube "einbetten" hinzufügen-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sn183k3Ck_s?si=I3Wp34tPZjSo_mHl" title="YouTube video player" border: 0px; allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="hint">Hinweis 4: Beim Übergang Glas → Wasser wird das Licht gebrochen. Bestimme den Brechungswinkel \(\beta\) im Diagramm auf S. 37</div>
+        <div class="hint">Hinweis 5: Die Scheibenwischer werden aktiviert, wenn der Sensor kein Licht mehr detektiert.</div>
+        <button class="button" onclick="showNextHint('task4')">Nächster Hinweis</button>
+    </div>
+
+</div>
+
+</body>
+</html>
+

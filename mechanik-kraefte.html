@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanik: Kräfte</title>
+    <!--LaTeX Einbindung für mathematische Darstellungen-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!--Ausgelagertes Design und Skript, gemeinsam für alle Kartensets-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/hints.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Mechanik: Kräfte</h1>
+    <p>Wähle eine Aufgabe aus und drücke auf den Knopf "Nächster Hinweis". Überlege erst bevor du dir einen weiteren Hinweis anschaust.</p>
+
+    <!-- Auswahl der Aufgaben -->
+    <button class="button" onclick="showHints('task1')">Aufgabe 1</button>
+    <button class="button" onclick="showHints('task2')">Aufgabe 2</button>
+
+    <!-- Hilfekarte für Aufgabe 1 -->
+    <div id="task1" class="task" style="display: none;">
+        <h2>Aufgabe 1</h2>
+        <!-- Bild einbinden, sobald vorhanden: <img src="img/Mech1.jpg" width="550"> -->
+        <p><em>Platzhalter: Aufgabenstellung oder Bild hier einfügen.</em></p>
+        <div class="hint">Hinweis 1: Ersten Hinweis hier eintragen.</div>
+        <div class="hint">Hinweis 2: Zweiten Hinweis hier eintragen.</div>
+        <div class="hint">Hinweis 3: Dritten Hinweis hier eintragen.</div>
+        <button class="button" onclick="showNextHint('task1')">Nächster Hinweis</button>
+    </div>
+
+    <!-- Hilfekarte für Aufgabe 2 -->
+    <div id="task2" class="task" style="display: none;">
+        <h2>Aufgabe 2</h2>
+        <p><em>Platzhalter: Aufgabenstellung oder Bild hier einfügen.</em></p>
+        <div class="hint">Hinweis 1: Ersten Hinweis hier eintragen.</div>
+        <div class="hint">Hinweis 2: Zweiten Hinweis hier eintragen.</div>
+        <button class="button" onclick="showNextHint('task2')">Nächster Hinweis</button>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tresor knacken</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: auto;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .lock-container {
+            position: relative;
+            display: inline-block;
+        }
+        .lock-image {
+            width: 276px; /* Größe des Schlossbildes */
+        }
+        .code-input {
+            position: absolute;
+            top: 62%; /* Positionieren */
+            left: 50%;
+            transform: translate(-52%, -53%);
+            width: 122px;
+            text-align: center;
+            border: 2px solid #0073e6;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .button {
+            padding: 13px 16px;
+            position: absolute;
+            transform: translate(-246%, -146%);
+            top: 59%;
+            margin-top: 14px;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+        .reward {
+            display: none;
+            margin-top: 57px;
+            padding: 20px;
+            border: 1px solid #4CAF50;
+            background-color: #eaffea;
+            color: #333;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function unlockSafe() {
+            const codeInput = document.getElementById("codeInput").value;
+            const correctCode = "5344"; // Hier den richtigen Code festlegen
+
+            if (codeInput === correctCode) {
+                document.getElementById("reward").style.display = "block";
+                document.getElementById("errorMessage").style.display = "none";
+            } else {
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Öffne die Tür</h1>
+    <p>Gib den richtigen Code ein, um das Schloss zu knacken und die Tür zu öffnen:</p>
+
+    <!-- Schloss-Bild mit Eingabefeld -->
+    <div class="lock-container">
+        <img src="img/schloss-screenshot.jpg" alt="Schloss" class="lock-image">
+        <input type="text" id="codeInput" class="code-input" maxlength="4" placeholder="Code">
+    </div>
+
+    <button class="button" onclick="unlockSafe()">Öffnen</button>
+
+    <!-- Fehlermeldung bei falschem Code -->
+    <p id="errorMessage" style="color: red; display: none;">Der Code ist leider nicht richtig, versuche es erneut!</p>
+
+    <!-- Belohnung bei richtigem Code -->
+    <div id="reward" class="reward">
+        <h2>🎉 Herzlichen Glückwunsch! 🎉</h2>
+        <p>Du hast die Primfaktorzerlegung gemeistert und die Tür geöffnet.</p>
+        <p>Nun kann der Wichtel Cornelius wieder in seine Zeit zurückkehren.</p>
+        <div class="tenor-gif-embed" data-postid="19295002" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/opening-door-to-paradise-zedd-griff-inside-out-song-doors-gif-19295002">Opening Door To Paradise Zedd GIF</a>from <a href="https://tenor.com/search/opening+door+to+paradise-gifs">Opening Door To Paradise GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+</div>
+
+</body>
+</html>

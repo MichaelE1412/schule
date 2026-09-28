@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilfekarten Übungen Kinematik</title>
+    <!--LaTeX Einbindung für mathematische Darstellungen-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!--Ausgelagertes Design und Skript, gemeinsam für alle Kartensets-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/hints.js" defer></script>
+</head>
+<body>
+
+<!-- data-wartezeit: Denkpause zwischen zwei Hinweisen in Sekunden -->
+<main class="hilfekarten" data-wartezeit="60">
+    <header>
+        <p class="kicker">Physik · Kinematik</p>
+        <h1>Übungen Kinematik</h1>
+        <p class="intro">Wähle eine Aufgabe aus und decke die Hinweise nacheinander auf. Überlege nach jedem Hinweis zuerst selbst, bevor du den nächsten anschaust.</p>
+    </header>
+
+    <!-- Hilfekarte für Aufgabe 2b -->
+    <section class="task" id="task2b" data-label="Aufgabe 2b">
+        <h2>Gleichförmig oder nicht?</h2>
+        <div class="hint">Bei einer gleichförmigen Bewegung legt man in gleichen Zeitabschnitten gleiche Strecken zurück. Schau dir dein \(t\)-\(s\)-Diagramm an: Ist der Graph überall eine Gerade?</div>
+        <div class="hint">Berechne für jeden \(20\)-m-Abschnitt die Geschwindigkeit \(v = \dfrac{\Delta s}{\Delta t}\).<br>Beispiel Bolt, \(20\) bis \(40\,\text{m}\): \(v = \dfrac{20\,\text{m}}{4{,}64\,\text{s} - 2{,}89\,\text{s}}\)<br>Vergleiche die Werte: Wo sind sie ungefähr gleich, wo nicht, und woran könnte das liegen?</div>
+    </section>
+
+    <!-- Hilfekarte für Aufgabe 2c -->
+    <section class="task" id="task2c" data-label="Aufgabe 2c">
+        <h2>Durchschnitt und Spitze</h2>
+        <div class="hint">\(\text{Durchschnittsgeschwindigkeit} = \dfrac{\text{gesamte Strecke}}{\text{gesamte Zeit}}\)<br>Die Spitzengeschwindigkeit steht nicht direkt in der Tabelle. Überlege, in welchem Abschnitt der Läufer am schnellsten war.</div>
+        <div class="hint">Nutze deine Abschnittsgeschwindigkeiten aus b). Der größte Wert ist eine gute Abschätzung für die Spitzengeschwindigkeit.<br>Achtung: \(\Delta t\) ist immer die Differenz zweier Zeiten, z.&nbsp;B. \(t_{80} - t_{60}\).</div>
+    </section>
+
+    <!-- Hilfekarte für Aufgabe 3 -->
+    <section class="task" id="task3" data-label="Aufgabe 3">
+        <h2>Anhalteweg</h2>
+        <div class="hint">Der Anhalteweg besteht aus zwei Phasen. Während der Reaktionszeit fährt das Auto unverändert weiter – welche Bewegungsform ist das? Erst danach bremst es gleichmäßig ab.<br>Rechne \(\frac{\text{km}}{\text{h}}\) zuerst in \(\frac{\text{m}}{\text{s}}\) um.</div>
+        <div class="hint">Reaktionsweg: \(s = v \cdot t\)<br>Bremszeit: Stelle \(v = a \cdot t\) nach \(t\) um und rechne mit dem Betrag von \(a\).<br>Bremsweg: \(s = \frac{1}{2} \cdot a \cdot t^2\) mit der Bremszeit.<br>Zu c): Die Fläche unter dem \(t\)-\(v\)-Graphen besteht aus einem Rechteck und einem Dreieck.</div>
+    </section>
+
+    <!-- Hilfekarte für Aufgabe 6 -->
+    <section class="task" id="task6" data-label="Aufgabe 6">
+        <h2>Aussage beurteilen</h2>
+        <div class="hint">Beim Beurteilen prüfst du zwei Dinge getrennt: Stimmt die Beobachtung? Stimmt die Begründung?</div>
+        <div class="hint">Ändert sich die Masse des Springers, wenn er den Schirm öffnet? Was ändert sich stattdessen? Denk an Aufgabe 4 mit dem Blatt Papier.</div>
+    </section>
+
+    <!-- Hilfekarte für Aufgabe 7 -->
+    <section class="task" id="task7" data-label="Aufgabe 7">
+        <h2>Flächen in Diagrammen</h2>
+        <div class="hint">Die Beschleunigung ist in jedem Abschnitt konstant, im \(t\)-\(a\)-Diagramm entstehen also waagerechte Linien.<br>Eine Rechteckfläche im \(t\)-\(a\)-Diagramm hat die Einheit \(\frac{\text{m}}{\text{s}^2} \cdot \text{s} = \frac{\text{m}}{\text{s}}\). Welche Größe hat diese Einheit?<br>Überlege genauso für eine Fläche im \(t\)-\(v\)-Diagramm: \(\frac{\text{m}}{\text{s}} \cdot \text{s} = \,?\)</div>
+        <div class="hint">Zu b): Berechne für jeden Abschnitt \(a \cdot \Delta t\) und addiere schrittweise. Eine Fläche unterhalb der \(t\)-Achse verringert die Geschwindigkeit.<br>Zu d): Zerlege die Fläche unter dem \(t\)-\(v\)-Graphen in Dreieck, Rechteck und Dreieck. Teile die Gesamthöhe durch die Höhe eines Stockwerks.<br>Zu e): Vergleiche die Einheiten von Steigungen und Flächen in den drei Diagrammen.</div>
+    </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" font-family="Arial,Helvetica,sans-serif">
+<rect width="640" height="480" fill="#fff"/>
+<!-- Quader: vorne unten A(120,420) B(420,420); Tiefe (+110,-80); Höhe 300 -->
+<polygon points="120,420 420,420 530,340 230,340" fill="#ffe08a" opacity="0.55"/>
+<g stroke="#999" stroke-width="2" fill="none">
+<rect x="120" y="120" width="300" height="300"/>
+<polyline points="120,120 230,40 530,40 420,120"/><line x1="530" y1="40" x2="530" y2="340"/><line x1="530" y1="340" x2="420" y2="420"/>
+</g>
+<g stroke="#999" stroke-width="2" stroke-dasharray="7 6" fill="none"><line x1="230" y1="40" x2="230" y2="340"/><line x1="230" y1="340" x2="120" y2="420"/><line x1="230" y1="340" x2="530" y2="340"/></g>
+<!-- Spitze P auf der Deckfläche (frei gewählt) -->
+<g stroke="#c0392b" stroke-width="3" fill="none"><line x1="120" y1="420" x2="370" y2="70"/><line x1="420" y1="420" x2="370" y2="70"/><line x1="530" y1="340" x2="370" y2="70"/></g>
+<line x1="230" y1="340" x2="370" y2="70" stroke="#c0392b" stroke-width="3" stroke-dasharray="7 6"/>
+<circle cx="370" cy="70" r="6" fill="#c0392b"/>
+<text x="380" y="62" font-size="22" fill="#c0392b" font-weight="bold">Spitze</text>
+<text x="255" y="458" font-size="24" fill="#333">5 cm</text>
+<text x="482" y="400" font-size="24" fill="#333">3 cm</text>
+<text x="545" y="200" font-size="24" fill="#333">6 cm</text>
+</svg>

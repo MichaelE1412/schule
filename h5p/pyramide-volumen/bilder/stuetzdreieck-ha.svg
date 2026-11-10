@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" font-family="Arial,Helvetica,sans-serif">
+<rect width="640" height="480" fill="#fff"/>
+<!-- A(100,400) B(400,400) C(520,300) D(220,300) M(310,350) S(310,70) Ma(250,400) -->
+<polygon points="310,350 250,400 310,70" fill="#ffe08a" opacity="0.6"/>
+<g stroke="#333" stroke-width="3" fill="none">
+<line x1="100" y1="400" x2="400" y2="400"/><line x1="400" y1="400" x2="520" y2="300"/>
+<line x1="100" y1="400" x2="310" y2="70"/><line x1="400" y1="400" x2="310" y2="70"/><line x1="520" y1="300" x2="310" y2="70"/>
+</g>
+<g stroke="#333" stroke-width="2" stroke-dasharray="8 6" fill="none">
+<line x1="100" y1="400" x2="220" y2="300"/><line x1="220" y1="300" x2="520" y2="300"/><line x1="220" y1="300" x2="310" y2="70"/>
+</g>
+<line x1="310" y1="350" x2="310" y2="70" stroke="#c0392b" stroke-width="4" stroke-dasharray="10 6"/>
+<line x1="250" y1="400" x2="310" y2="70" stroke="#1f6fb2" stroke-width="4"/>
+<line x1="250" y1="400" x2="310" y2="350" stroke="#2e8b57" stroke-width="4" stroke-dasharray="10 6"/>
+<polyline points="310,330 293,344 293,364" fill="none" stroke="#333" stroke-width="2"/>
+<circle cx="310" cy="350" r="4" fill="#333"/><circle cx="250" cy="400" r="4" fill="#333"/>
+<text x="320" y="215" font-size="26" fill="#c0392b" font-weight="bold">h</text>
+<text x="230" y="230" font-size="26" fill="#1f6fb2" font-weight="bold">h<tspan font-size="18" dy="6">a</tspan></text>
+<text x="258" y="356" font-size="22" fill="#2e8b57" font-weight="bold">a/2</text>
+<text x="240" y="440" font-size="26" fill="#333">a</text>
+<text x="472" y="370" font-size="26" fill="#333">a</text>
+<text x="20" y="40" font-size="22" fill="#333">Stützdreieck: h, h<tspan font-size="16" dy="5">a</tspan><tspan dy="-5"> und a/2</tspan></text>
+<text x="20" y="470" font-size="18" fill="#555">rechter Winkel zwischen h und a/2 · h<tspan font-size="13" dy="4">a</tspan><tspan dy="-4"> ist die Hypotenuse</tspan></text>
+</svg>

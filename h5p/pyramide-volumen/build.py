@@ -469,7 +469,7 @@ content = {
     "gamemapSteps": {
         "backgroundImageSettings": {
             "backgroundColor": "rgb(241, 215, 156)",
-            "backgroundImage": {"path": "images/karte.jpg", "mime": "image/jpeg",
+            "backgroundImage": {"path": "images/karte-beschriftet.jpg", "mime": "image/jpeg",
                                 "copyright": {"license": "U"}, "width": 1600, "height": 1000}},
         "gamemap": {"elements": elements, "paths": paths},
     },
@@ -499,7 +499,7 @@ if os.path.exists(OUT):
 with zipfile.ZipFile(OUT, "w", zipfile.ZIP_DEFLATED) as z:
     z.writestr("h5p.json", json.dumps(h5p, ensure_ascii=False))
     z.writestr("content/content.json", json.dumps(content, ensure_ascii=False))
-    for name in ("karte.jpg", "stuetzdreieck-ha.png", "stuetzdreieck-s.png", "quader-pyramide.png"):
+    for name in ("karte-beschriftet.jpg", "stuetzdreieck-ha.png", "stuetzdreieck-s.png", "quader-pyramide.png"):
         z.write(os.path.join(HERE, "bilder", name), "content/images/" + name)
     for d in sorted(os.listdir(REF)):
         full = os.path.join(REF, d)

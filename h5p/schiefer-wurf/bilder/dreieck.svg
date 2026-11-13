@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="400" viewBox="0 0 1040 400" font-family="Helvetica,Arial,sans-serif">
+<defs><marker id="pn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker><marker id="pb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f6fa7"/></marker><marker id="pr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d62839"/></marker><marker id="pg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f8a70"/></marker><marker id="po" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e07a1f"/></marker><marker id="pk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs><rect width="1040" height="400" fill="#ffffff"/>
+<polygon points="90,330 470,330 470,110" fill="#eef3f9" stroke="#1d3557" stroke-width="3"/>
+<polyline points="444,330 444,304 470,304" fill="none" stroke="#1d3557" stroke-width="2"/>
+<path d="M160,330 A70,70 0 0 0 150.6,294.9" fill="none" stroke="#d62839" stroke-width="2.5"/>
+<text x="170.0" y="318.0" font-size="26" fill="#d62839" text-anchor="start" font-weight="bold" >α</text>
+<line x1="90" y1="330" x2="470" y2="110" stroke="#d62839" stroke-width="5"/>
+<line x1="90" y1="330" x2="470" y2="330" stroke="#2f6fa7" stroke-width="5"/>
+<line x1="470" y1="330" x2="470" y2="110" stroke="#1f8a70" stroke-width="5"/>
+<text x="250.0" y="200.0" font-size="22" fill="#d62839" text-anchor="middle" font-weight="bold" transform="rotate(-30 250 200)">Hypotenuse</text>
+<text x="280.0" y="365.0" font-size="22" fill="#2f6fa7" text-anchor="middle" font-weight="bold" >Ankathete von α</text>
+<text x="490.0" y="225.0" font-size="22" fill="#1f8a70" text-anchor="start" font-weight="bold" >Gegenkathete</text>
+<text x="490.0" y="252.0" font-size="22" fill="#1f8a70" text-anchor="start" font-weight="bold" >von α</text>
+<text x="660.0" y="150.0" font-size="21" fill="#1d3557" text-anchor="start" font-weight="normal" >sin(α) = Gegenkathete : Hypotenuse</text>
+<text x="660.0" y="195.0" font-size="21" fill="#1d3557" text-anchor="start" font-weight="normal" >cos(α) = Ankathete : Hypotenuse</text>
+<text x="660.0" y="240.0" font-size="21" fill="#1d3557" text-anchor="start" font-weight="normal" >tan(α) = Gegenkathete : Ankathete</text>
+<text x="660.0" y="300.0" font-size="19" fill="#e07a1f" text-anchor="start" font-weight="bold" >Taschenrechner auf DEG (Grad) stellen!</text>
+</svg>

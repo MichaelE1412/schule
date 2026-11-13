@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe6fa"/><stop offset="1" stop-color="#e9f6ff"/></linearGradient><linearGradient id="gras" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe3a0"/><stop offset="1" stop-color="#9fd27f"/></linearGradient></defs>
+<rect width="1600" height="1000" fill="url(#gras)"/>
+<path d="M0 300 Q400 260 800 300 T1600 300" fill="none" stroke="#8cc46c" stroke-width="3" opacity="0.6"/>
+<path d="M0 560 Q400 520 800 560 T1600 560" fill="none" stroke="#8cc46c" stroke-width="3" opacity="0.6"/>
+<path d="M0 790 Q400 750 800 790 T1600 790" fill="none" stroke="#8cc46c" stroke-width="3" opacity="0.6"/>
+<g fill="#7dbb5c" opacity="0.8"><ellipse cx="470" cy="600" rx="18" ry="6"/><ellipse cx="492" cy="604" rx="12" ry="4"/></g>
+<g fill="#7dbb5c" opacity="0.8"><ellipse cx="1180" cy="330" rx="18" ry="6"/><ellipse cx="1202" cy="334" rx="12" ry="4"/></g>
+<g fill="#7dbb5c" opacity="0.8"><ellipse cx="60" cy="980" rx="18" ry="6"/><ellipse cx="82" cy="984" rx="12" ry="4"/></g>
+<g fill="#7dbb5c" opacity="0.8"><ellipse cx="980" cy="990" rx="18" ry="6"/><ellipse cx="1002" cy="994" rx="12" ry="4"/></g>
+<g fill="#7dbb5c" opacity="0.8"><ellipse cx="700" cy="330" rx="18" ry="6"/><ellipse cx="722" cy="334" rx="12" ry="4"/></g>
+<g fill="#7dbb5c" opacity="0.8"><ellipse cx="1560" cy="590" rx="18" ry="6"/><ellipse cx="1582" cy="594" rx="12" ry="4"/></g>
+<rect x="1375" y="250" width="190" height="95" fill="#fff4e0" stroke="#7a4b20" stroke-width="3"/>
+<rect x="1375" y="250" width="19" height="95" fill="#e74c3c" opacity="0.85"/>
+<rect x="1413" y="250" width="19" height="95" fill="#e74c3c" opacity="0.85"/>
+<rect x="1451" y="250" width="19" height="95" fill="#e74c3c" opacity="0.85"/>
+<rect x="1489" y="250" width="19" height="95" fill="#e74c3c" opacity="0.85"/>
+<rect x="1527" y="250" width="19" height="95" fill="#e74c3c" opacity="0.85"/>
+<path d="M1420,345 Q1470,290 1520,345 Z" fill="#7a4b20"/>
+<polygon points="1470,60 1355,254 1585,254" fill="#e74c3c" stroke="#7a4b20" stroke-width="3"/>
+<line x1="1470" y1="60" x2="1415" y2="254" stroke="#fff4e0" stroke-width="10" opacity="0.9"/>
+<line x1="1470" y1="60" x2="1470" y2="254" stroke="#fff4e0" stroke-width="10" opacity="0.9"/>
+<line x1="1470" y1="60" x2="1525" y2="254" stroke="#fff4e0" stroke-width="10" opacity="0.9"/>
+<line x1="1470" y1="60" x2="1470" y2="25" stroke="#7a4b20" stroke-width="3"/>
+<polygon points="1470,25 1504,36 1470,47" fill="#f1c40f"/>
+<g transform="translate(70,690) scale(1.0)"><rect x="-8" y="0" width="16" height="30" fill="#7a5328"/><polygon points="0,-130 -55,5 55,5" fill="#3f8f3a"/><polygon points="0,-130 0,5 55,5" fill="#2f7a2c"/></g>
+<g transform="translate(165,640) scale(0.8)"><rect x="-8" y="0" width="16" height="30" fill="#7a5328"/><polygon points="0,-130 -55,5 55,5" fill="#3f8f3a"/><polygon points="0,-130 0,5 55,5" fill="#2f7a2c"/></g>
+<g transform="translate(120,760) scale(0.7)"><rect x="-8" y="0" width="16" height="30" fill="#7a5328"/><polygon points="0,-130 -55,5 55,5" fill="#3f8f3a"/><polygon points="0,-130 0,5 55,5" fill="#2f7a2c"/></g>
+<g transform="translate(1110,640) scale(0.6)"><rect x="-8" y="0" width="16" height="30" fill="#7a5328"/><polygon points="0,-130 -55,5 55,5" fill="#3f8f3a"/><polygon points="0,-130 0,5 55,5" fill="#2f7a2c"/></g>
+<g transform="translate(560,640)"><polygon points="-26,0 26,0 0,80" fill="#e0a85a" stroke="#9b6a2a" stroke-width="2"/><circle cx="-12" cy="-8" r="20" fill="#f7b6c8"/><circle cx="12" cy="-8" r="20" fill="#fff1c2"/><circle cx="0" cy="-26" r="20" fill="#8b5a3c"/></g>
+<g transform="translate(1180,330)"><polygon points="0,-60 -28,10 28,10" fill="#9b59b6"/><circle cx="0" cy="-62" r="8" fill="#f1c40f"/><line x1="-18" y1="-14" x2="18" y2="-14" stroke="#fff" stroke-width="4"/></g>
+<g transform="translate(965,695)"><rect width="420" height="66" rx="12" fill="#fffbea" stroke="#5a7a2a" stroke-width="3"/><text x="210" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="31" fill="#3d5a12">Oberfläche des Kegels</text></g>
+</svg>

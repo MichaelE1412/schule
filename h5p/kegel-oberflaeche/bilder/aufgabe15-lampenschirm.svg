@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460" font-family="Arial,Helvetica,sans-serif">
+<rect width="800" height="460" fill="#fff"/>
+<path d="M371.7,117.4 L673.4,4.9 A644.0,644.0 0 0 1 673.4,455.1 L371.7,342.6 A322.0,322.0 0 0 0 371.7,117.4 Z" fill="#cfe8f7" stroke="#333" stroke-width="2.5"/>
+<path d="M371.7,117.4 L70,230 L371.7,342.6" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="7 6"/>
+<path d="M673.4,4.9 A644.0,644.0 0 0 1 673.4,455.1" fill="none" stroke="#2e8b57" stroke-width="5"/>
+<path d="M371.7,117.4 A322.0,322.0 0 0 1 371.7,342.6" fill="none" stroke="#c0392b" stroke-width="5"/>
+<text x="212.8" y="161.7" font-size="24" fill="#333">x</text>
+<text x="512.5" y="47.1" font-size="24" fill="#333">70</text>
+<text x="321.7" y="238" font-size="24" fill="#c0392b">50</text>
+<text x="726.0" y="238" font-size="24" fill="#2e8b57">100</text>
+<text x="20" y="440" font-size="18" fill="#555">Angaben in cm · roter Bogen 50 cm · grüner Bogen 100 cm</text>
+</svg>

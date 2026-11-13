@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="470" viewBox="0 0 820 470" font-family="Arial,Helvetica,sans-serif">
+<rect width="820" height="470" fill="#fff"/>
+<path d="M65,360 L150,80 L235,360 A85,23.8 0 0 1 65,360 Z" fill="#f2b6b0" stroke="#333" stroke-width="2.5"/><path d="M65,360 A85,23.8 0 0 1 235,360" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="7 5"/><circle cx="150" cy="360" r="3.5" fill="#333"/>
+<path d="M65,360 A85,24 0 0 0 235,360" fill="none" stroke="#7a3b35" stroke-width="5"/>
+<text x="60" y="425" font-size="20" fill="#333">Hut aus Filz</text>
+<text x="40" y="452" font-size="18" fill="#7a3b35">Kopfumfang 55 cm</text>
+<path d="M520,70 L274.3,242.1 A300,300 0 0 0 765.7,242.1 Z" fill="#f2b6b0" stroke="#333" stroke-width="2.5" stroke-dasharray="0"/>
+<path d="M274.3,242.1 A300,300 0 0 0 765.7,242.1" fill="none" stroke="#7a3b35" stroke-width="6"/>
+<text x="500" y="410" font-size="34" fill="#7a3b35" font-weight="bold">?</text>
+<text x="400" y="452" font-size="20" fill="#333">Schnittmuster (Mantel)</text>
+</svg>

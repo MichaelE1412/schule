@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="420" viewBox="0 0 860 420" font-family="Arial,Helvetica,sans-serif">
+<rect width="860" height="420" fill="#fff"/>
+<defs><marker id="pf" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs><path d="M70,330 L140,100 L210,330 A70,19.6 0 0 1 70,330 Z" fill="#cde7f8" stroke="#333" stroke-width="2.5"/><path d="M70,330 A70,19.6 0 0 1 210,330" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="7 5"/><circle cx="140" cy="330" r="3.5" fill="#333"/>
+<text x="20" y="60" font-size="24" fill="#333" font-weight="bold">a)</text>
+<line x1="49.0" y1="323.6" x2="119.0" y2="93.6" stroke="#333" stroke-width="1.6" marker-start="url(#pf)" marker-end="url(#pf)"/>
+<text x="65.0" y="202.8" font-size="21" fill="#333" text-anchor="middle" transform="rotate(-73.1 65.0 202.8)">12 cm</text>
+<line x1="140" y1="330" x2="210" y2="330" stroke="#c0392b" stroke-width="2.5"/>
+<line x1="140" y1="368" x2="210" y2="368" stroke="#333" stroke-width="1.6" marker-start="url(#pf)" marker-end="url(#pf)"/>
+<text x="175.0" y="394" font-size="21" text-anchor="middle" fill="#333">5,1 cm</text>
+<path d="M350,330 L430,160 L510,330 A80,22.400000000000002 0 0 1 350,330 Z" fill="#f8d0cd" stroke="#333" stroke-width="2.5"/><path d="M350,330 A80,22.400000000000002 0 0 1 510,330" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="7 5"/><circle cx="430" cy="330" r="3.5" fill="#333"/>
+<text x="310" y="60" font-size="24" fill="#333" font-weight="bold">b)</text>
+<line x1="330.1" y1="320.6" x2="410.1" y2="150.6" stroke="#333" stroke-width="1.6" marker-start="url(#pf)" marker-end="url(#pf)"/>
+<text x="352.2" y="227.2" font-size="21" fill="#333" text-anchor="middle" transform="rotate(-64.8 352.2 227.2)">10 mm</text>
+<line x1="350" y1="368" x2="510" y2="368" stroke="#333" stroke-width="1.6" marker-start="url(#pf)" marker-end="url(#pf)"/>
+<text x="430" y="394" font-size="21" text-anchor="middle" fill="#333">8 mm</text>
+<path d="M650,330 L720,90 L790,330 A70,19.6 0 0 1 650,330 Z" fill="#dcefc6" stroke="#333" stroke-width="2.5"/><path d="M650,330 A70,19.6 0 0 1 790,330" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="7 5"/><circle cx="720" cy="330" r="3.5" fill="#333"/>
+<text x="600" y="60" font-size="24" fill="#333" font-weight="bold">c)</text>
+<line x1="628.9" y1="323.8" x2="698.9" y2="83.8" stroke="#333" stroke-width="1.6" marker-start="url(#pf)" marker-end="url(#pf)"/>
+<text x="644.9" y="198.3" font-size="21" fill="#333" text-anchor="middle" transform="rotate(-73.7 644.9 198.3)">12,2 cm</text>
+<line x1="650" y1="368" x2="790" y2="368" stroke="#333" stroke-width="1.6" marker-start="url(#pf)" marker-end="url(#pf)"/>
+<text x="720" y="394" font-size="21" text-anchor="middle" fill="#333">11,4 cm</text>
+</svg>

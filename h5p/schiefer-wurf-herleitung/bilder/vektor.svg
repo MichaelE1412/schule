@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="420" viewBox="0 0 1140 420" font-family="Helvetica,Arial,sans-serif">
+<defs><marker id="pn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker><marker id="pb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f6fa7"/></marker><marker id="pr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d62839"/></marker><marker id="pg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f8a70"/></marker><marker id="po" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e07a1f"/></marker><marker id="pk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs><rect width="1140" height="420" fill="#ffffff"/>
+<line x1="240.0" y1="360.0" x2="700.0" y2="360.0" stroke="#333" stroke-width="2" marker-end="url(#pk)" />
+<line x1="260.0" y1="380.0" x2="260.0" y2="50.0" stroke="#333" stroke-width="2" marker-end="url(#pk)" />
+<text x="705.0" y="386.0" font-size="20" fill="#333" text-anchor="start" font-weight="normal" font-style="italic">x</text>
+<text x="234.0" y="60.0" font-size="20" fill="#333" text-anchor="start" font-weight="normal" font-style="italic">y</text>
+<line x1="260.0" y1="360.0" x2="530.3" y2="360.0" stroke="#2f6fa7" stroke-width="5" marker-end="url(#pb)" />
+<line x1="530.3" y1="360" x2="530.3" y2="170.7" stroke="#1f8a70" stroke-width="2" stroke-dasharray="7 6"/>
+<line x1="260.0" y1="360.0" x2="260.0" y2="170.7" stroke="#1f8a70" stroke-width="5" marker-end="url(#pg)" />
+<line x1="260" y1="170.7" x2="530.3" y2="170.7" stroke="#2f6fa7" stroke-width="2" stroke-dasharray="7 6"/>
+<line x1="260.0" y1="360.0" x2="530.3" y2="170.7" stroke="#d62839" stroke-width="6" marker-end="url(#pr)" />
+<path d="M330,360 A70,70 0 0 0 317.3,319.8" fill="none" stroke="#d62839" stroke-width="2.5"/>
+<text x="338.0" y="346.0" font-size="24" fill="#d62839" text-anchor="start" font-weight="bold" >α</text>
+<text x="380.3" y="140.7" font-size="22" fill="#d62839" text-anchor="start" font-weight="bold" >v<tspan dx="-12.1" dy="-13.6" font-size="13.6">→</tspan><tspan dy="13.6" dx="0.9">​</tspan> (Betrag v, Richtung α)</text>
+<text x="395.2" y="394.0" font-size="21" fill="#2f6fa7" text-anchor="middle" font-weight="bold" >v<tspan dy="6.7" font-size="14.3">x</tspan><tspan dy="-6.7">​</tspan> = v · cos(α)</text>
+<text x="246.0" y="265.4" font-size="21" fill="#1f8a70" text-anchor="end" font-weight="bold" >v<tspan dy="6.7" font-size="14.3">y</tspan><tspan dy="-6.7">​</tspan> = v · sin(α)</text>
+<text x="760.0" y="120.0" font-size="21" fill="#1d3557" text-anchor="start" font-weight="normal" >Ein Vektor ist ein Pfeil mit</text>
+<text x="760.0" y="152.0" font-size="21" fill="#1d3557" text-anchor="start" font-weight="normal" >• Betrag (Länge) und</text>
+<text x="760.0" y="184.0" font-size="21" fill="#1d3557" text-anchor="start" font-weight="normal" >• Richtung.</text>
+<text x="760.0" y="240.0" font-size="21" fill="#1d3557" text-anchor="start" font-weight="normal" >Er lässt sich in Komponenten</text>
+<text x="760.0" y="272.0" font-size="21" fill="#1d3557" text-anchor="start" font-weight="normal" >zerlegen: v<tspan dx="-11.6" dy="-13.0" font-size="13.0">→</tspan><tspan dy="13.0" dx="0.8">​</tspan> = v<tspan dy="6.7" font-size="14.3">x</tspan><tspan dy="-6.7">​</tspan>-Pfeil + v<tspan dy="6.7" font-size="14.3">y</tspan><tspan dy="-6.7">​</tspan>-Pfeil</text>
+<text x="760.0" y="320.0" font-size="21" fill="#1d3557" text-anchor="start" font-weight="bold" >Betrag: v = √(v<tspan dy="6.7" font-size="14.3">x</tspan><tspan dy="-6.7">​</tspan>² + v<tspan dy="6.7" font-size="14.3">y</tspan><tspan dy="-6.7">​</tspan>²)</text>
+</svg>

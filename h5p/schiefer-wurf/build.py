@@ -161,7 +161,7 @@ stage("M2", "M2 Vektoren", ["M1", "H2", "H3", "E1"], [
 <ul>
 <li>Die <strong>Länge</strong> des Pfeils gibt den <strong>Betrag</strong> an: \\(|\\vec v|=v\\).</li>
 <li>Die <strong>Richtung</strong> des Pfeils gibt die Bewegungsrichtung an, z. B. durch den Winkel \\(\\alpha\\) zur Horizontalen.</li>
-<li>Ein Vektor lässt sich in <strong>Komponenten</strong> entlang der Achsen zerlegen: \\(\\vec v=\\begin{pmatrix} v_x \\\\ v_y \\end{pmatrix}\\) mit \\(v_x=v\\cdot\\cos(\\alpha)\\) und \\(v_y=v\\cdot\\sin(\\alpha)\\).</li>
+<li>Ein Vektor lässt sich in <strong>Komponenten</strong> entlang der Achsen zerlegen: \\(\\vec v=\\left(\\begin{array}{c} v_x \\\\ v_y \\end{array}\\right)\\) mit \\(v_x=v\\cdot\\cos(\\alpha)\\) und \\(v_y=v\\cdot\\sin(\\alpha)\\).</li>
 <li>Umgekehrt gilt \\(v=\\sqrt{v_x^2+v_y^2}\\) (Pythagoras) und \\(\\tan(\\alpha)=\\frac{v_y}{v_x}\\).</li>
 </ul>
 """),
@@ -346,7 +346,7 @@ stage("A2", "A2 Aufg. 2 Messwerte", ["A1", "T1", "T2", "A3"], [
 stage("T2", "T2 Hilfe Bahnkurve", ["A2", "A3"], [
     text("T2", """
 <h3>T2 – Abzweig: Die Bahnkurve y(x)</h3>
-<p>Aus Gleichung (1) folgt \\(t=\\dfrac{x}{v_0\\cdot\\cos(\\alpha)}\\). Eingesetzt in \\(y(t)=-\\frac{g}{2}t^2+v_0\\sin(\\alpha)\\,t+y_0\\) ergibt sich die <strong>Bahngleichung</strong></p>
+<p>Aus Gleichung (1) folgt \\(t=\\displaystyle\\frac{x}{v_0\\cdot\\cos(\\alpha)}\\). Eingesetzt in \\(y(t)=-\\frac{g}{2}t^2+v_0\\sin(\\alpha)\\,t+y_0\\) ergibt sich die <strong>Bahngleichung</strong></p>
 <p>\\[ y(x)=-\\frac{g}{2\\,v_0^2\\cos^2(\\alpha)}\\,x^2+\\tan(\\alpha)\\cdot x+y_0 \\]</p>
 <p>Das ist eine quadratische Funktion \\(y=a\\,x^2+b\\,x+c\\) mit \\(a=-\\frac{g}{2v_0^2\\cos^2(\\alpha)}\\), \\(b=\\tan(\\alpha)\\), \\(c=y_0\\). Die Bahn ist also eine nach unten geöffnete Parabel.</p>
 <p><strong>Regression mit GeoGebra:</strong> Geben Sie in die Eingabezeile ein:</p>
@@ -410,9 +410,9 @@ stage("X2", "X2 Waagerechter Wurf", ["X1", "X3"], [
     mc("X2", """<h3>X2 – Vertiefung: Aufgabe 6</h3>
 <p>Untersuchen Sie, ob die Bahnkurve eines waagerechten Wurfs ebenfalls eine Wurfparabel ist. Setzen Sie dazu \\(\\alpha=0^\\circ\\) und die Abwurfhöhe \\(h\\) in die Bahngleichung des schiefen Wurfs ein.</p>
 <p>Welche Bahngleichung erhalten Sie?</p>""",
-       [("\\(y(x)=h-\\dfrac{g}{2\\,v_0^2}\\,x^2\\)", True, ""),
-        ("\\(y(x)=h-\\dfrac{g}{2}\\,x^2\\)", False, "Beim Einsetzen von t = x : v0 bleibt v0² im Nenner."),
-        ("\\(y(x)=h-\\dfrac{g}{v_0}\\,x\\)", False, "Das wäre eine Gerade.")],
+       [("\\(y(x)=h-\\displaystyle\\frac{g}{2\\,v_0^2}\\,x^2\\)", True, ""),
+        ("\\(y(x)=h-\\displaystyle\\frac{g}{2}\\,x^2\\)", False, "Beim Einsetzen von t = x : v0 bleibt v0² im Nenner."),
+        ("\\(y(x)=h-\\displaystyle\\frac{g}{v_0}\\,x\\)", False, "Das wäre eine Gerade.")],
        route("Mit α = 0° gilt cos(α) = 1 und tan(α) = 0.",
              "Richtig: Auch der waagerechte Wurf ist eine Wurfparabel – ein Spezialfall des schiefen Wurfs."), single=True),
     blanks("X2-Zahl", "<p>Prüfen Sie mit D1a): \\(h=1{,}25\\,\\text{m}\\), \\(v_0=4\\,\\frac{\\text{m}}{\\text{s}}\\). In welcher Höhe ist die Kugel nach \\(x=1\\,\\text{m}\\)?</p>",

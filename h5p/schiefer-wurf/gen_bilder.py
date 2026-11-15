@@ -33,10 +33,13 @@ def formel(s, size):
     """Ersetzt v⃗, v_x, v_y, v_0 durch SVG-tspans (Pfeil, Index)."""
     up, dn = 0.32 * size, 0.62 * size
     sub = lambda c: (f'<tspan dy="{up:.1f}" font-size="{0.68 * size:.1f}">{c}</tspan><tspan dy="{-up:.1f}">\u200b</tspan>')
+    s = s.replace("v⃗_x", "v⃗\x01x").replace("v⃗_y", "v⃗\x01y")
     for tok, c in (("v_x", "x"), ("v_y", "y"), ("vₓ", "x")):
         s = s.replace(tok, "v" + sub(c))
     s = s.replace("v⃗", f'v<tspan dx="{-0.55 * size:.1f}" dy="{-dn:.1f}" font-size="{0.62 * size:.1f}">→</tspan>'
                          f'<tspan dy="{dn:.1f}" dx="{0.04 * size:.1f}">\u200b</tspan>')
+    for c in "xy":
+        s = s.replace("\x01" + c, sub(c))
     return s
 
 
@@ -298,12 +301,13 @@ def karte():
                 '<path d="M0,0 L10,5 L0,10 z" fill="#5d7fa3"/></marker></defs>\n' + "\n".join(b) + "\n</svg>\n")
 
 
-dreieck()
-vektor()
-bahn()
-boule()
-kugelstoss()
-weitsprung()
-blasrohr()
-karte()
-print("SVGs geschrieben nach", OUT)
+if __name__ == "__main__":
+    dreieck()
+    vektor()
+    bahn()
+    boule()
+    kugelstoss()
+    weitsprung()
+    blasrohr()
+    karte()
+    print("SVGs geschrieben nach", OUT)

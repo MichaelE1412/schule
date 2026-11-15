@@ -290,16 +290,7 @@ stage("T4", "T4 Starthöhe", ["T3", "P1"], [
        route("Drei Aussagen sind richtig.", "Richtig. Weiter zum Herleitungspuzzle (P1)."))])
 
 # ================================================================ C · Herleitungspuzzle
-NOTATION = """
-<table border="1" cellpadding="5" style="border-collapse:collapse">
-<tr><th>Puzzle</th><th>Buch</th><th>Bedeutung</th></tr>
-<tr><td>\\(s_x,\\ s_y\\)</td><td>\\(x(t),\\ y(t)\\)</td><td>Ort in \\(x\\)- bzw. \\(y\\)-Richtung</td></tr>
-<tr><td>\\(v_{0x},\\ v_{0y}\\)</td><td>\\(v_{x,0},\\ v_{y,0}\\)</td><td>Komponenten der Startgeschwindigkeit</td></tr>
-<tr><td>\\(h_0\\)</td><td>\\(y_0\\)</td><td>Starthöhe</td></tr>
-<tr><td>\\(t_{ges}\\)</td><td>\\(t_E\\)</td><td>gesamte Flugzeit</td></tr>
-<tr><td>\\(s_{max}\\)</td><td>\\(w\\)</td><td>Wurfweite</td></tr>
-</table>
-"""
+NOTATION = "<p>\\[ \\begin{array}{|l|l|l|} \\hline \\textbf{Puzzle} & \\textbf{Buch} & \\textbf{Bedeutung} \\\\ \\hline s_x,\\ s_y & x(t),\\ y(t) & \\text{Ort in } x\\text{- bzw. } y\\text{-Richtung} \\\\ \\hline v_{0x},\\ v_{0y} & v_{x,0},\\ v_{y,0} & \\text{Komponenten der Startgeschwindigkeit} \\\\ \\hline h_0 & y_0 & \\text{Starthöhe} \\\\ \\hline t_{ges} & t_E & \\text{gesamte Flugzeit} \\\\ \\hline s_{max} & w & \\text{Wurfweite} \\\\ \\hline \\end{array} \\]</p>"
 
 stage("P1", "P1 Puzzle: x und y", ["T4", "P2"], [
     text("P1", f"""

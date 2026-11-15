@@ -95,7 +95,7 @@ stage("D1", "D1 Vorwissen Würfe", ["Start", "H1", "M1"], [
       "<p>Wurfweite x ≈ *%s* m</p>" % alt("2,02", "2,0", "2,01", "2,04")],
         route("Gehen Sie zuerst zum Abzweig H1.", "Richtig.")),
     blanks("D1-senkrecht", "<p><strong>b) Senkrechter Wurf nach oben:</strong> Ein Ball wird mit \\(12\\,\\frac{\\text{m}}{\\text{s}}\\) senkrecht nach oben geworfen.</p>",
-           ["<p>Steigzeit t<sub>S</sub> ≈ *%s:Am höchsten Punkt ist v = 0.* s</p>" % alt("1,22", "1,2", "1,223"),
+           ["<p>Steigzeit \\(t_{S}\\) ≈ *%s:Am höchsten Punkt ist v = 0.* s</p>" % alt("1,22", "1,2", "1,223"),
             "<p>Steighöhe h ≈ *%s* m</p>" % alt("7,34", "7,3", "7,339", "7,32", "7,35")],
            route("Gehen Sie zuerst zum Abzweig H1.", "Richtig.")),
     mc("D1-Prinzip", "<p><strong>c)</strong> Warum fällt die Kugel aus a) genauso lange wie eine Kugel, die man an der Tischkante einfach fallen lässt?</p>",
@@ -108,18 +108,13 @@ stage("D1", "D1 Vorwissen Würfe", ["Start", "H1", "M1"], [
 stage("H1", "H1 Hilfe Würfe", ["D1", "M1"], [
     text("H1", """
 <h3>H1 – Abzweig: Würfe und freier Fall</h3>
-<table border="1" cellpadding="5" style="border-collapse:collapse">
-<tr><th>Bewegung</th><th>Ort</th><th>Geschwindigkeit</th></tr>
-<tr><td>freier Fall</td><td>\\(y(t)=-\\frac{g}{2}t^2\\)</td><td>\\(v(t)=-g\\cdot t\\)</td></tr>
-<tr><td>senkrechter Wurf nach oben</td><td>\\(y(t)=v_0\\cdot t-\\frac{g}{2}t^2\\)</td><td>\\(v(t)=v_0-g\\cdot t\\)</td></tr>
-<tr><td>waagerechter Wurf aus Höhe \\(h\\)</td><td>\\(x(t)=v_0\\cdot t,\\; y(t)=h-\\frac{g}{2}t^2\\)</td><td>\\(v_x=v_0,\\; v_y=-g\\cdot t\\)</td></tr>
-</table>
+<p>\\[ \\begin{array}{|l|l|l|} \\hline \\textbf{Bewegung} & \\textbf{Ort} & \\textbf{Geschwindigkeit} \\\\ \\hline \\text{freier Fall} & y(t)=-\\frac{g}{2}t^2 & v(t)=-g\\cdot t \\\\ \\hline \\text{senkrechter Wurf nach oben} & y(t)=v_0\\cdot t-\\frac{g}{2}t^2 & v(t)=v_0-g\\cdot t \\\\ \\hline \\text{waagerechter Wurf aus Höhe } h & x(t)=v_0\\cdot t,\\; y(t)=h-\\frac{g}{2}t^2 & v_x=v_0,\\; v_y=-g\\cdot t \\\\ \\hline \\end{array} \\]</p>
 <p>Steigzeit beim senkrechten Wurf: \\(v(t_S)=0 \\Rightarrow t_S=\\frac{v_0}{g}\\). Steighöhe: \\(h=\\frac{v_0^2}{2g}\\).</p>
 <p><strong>Superpositionsprinzip:</strong> Horizontale und vertikale Bewegung laufen unabhängig voneinander ab und überlagern sich.</p>
 """),
     blanks("H1-Aufgabe", "<p><strong>Parallelaufgaben:</strong> a) Waagerechter Wurf aus \\(1{,}8\\,\\text{m}\\) Höhe mit \\(3\\,\\frac{\\text{m}}{\\text{s}}\\). b) Senkrechter Wurf mit \\(15\\,\\frac{\\text{m}}{\\text{s}}\\).</p>",
            ["<p>a) t ≈ *%s* s, x ≈ *%s* m</p>" % (alt("0,61", "0,6", "0,606"), alt("1,82", "1,8", "1,817", "1,83")),
-            "<p>b) t<sub>S</sub> ≈ *%s* s, h ≈ *%s* m</p>" % (alt("1,53", "1,5", "1,529"), alt("11,47", "11,5", "11,468", "11,46"))],
+            "<p>b) \\(t_{S}\\) ≈ *%s* s, h ≈ *%s* m</p>" % (alt("1,53", "1,5", "1,529"), alt("11,47", "11,5", "11,468", "11,46"))],
            route("Notieren Sie, wo Sie hängen, und gehen Sie weiter zu M1. Fragen Sie bei Bedarf nach.",
                  "Richtig. Weiter zu M1."))])
 
@@ -172,7 +167,7 @@ stage("M2", "M2 Vektoren", ["M1", "H2", "H3", "E1"], [
         ("Temperatur", False, "Temperatur ist ein Skalar.")],
        route("Fragen Sie sich jeweils: Ist es sinnvoll zu sagen, in welche Richtung die Größe zeigt?", "Richtig.")),
     blanks("M2-Zerlegen", "<p>b) Zerlegen Sie: \\(v=20\\,\\frac{\\text{m}}{\\text{s}}\\) unter \\(\\alpha=35^\\circ\\) zur Horizontalen. c) Setzen Sie zusammen: \\(v_x=6\\,\\frac{\\text{m}}{\\text{s}}\\), \\(v_y=8\\,\\frac{\\text{m}}{\\text{s}}\\).</p>",
-           ["<p>b) v<sub>x</sub> ≈ *%s* m/s, v<sub>y</sub> ≈ *%s* m/s</p>" % (alt("16,38", "16,4", "16,383"), alt("11,47", "11,5", "11,472")),
+           ["<p>b) \\(v_{x}\\) ≈ *%s* m/s, \\(v_{y}\\) ≈ *%s* m/s</p>" % (alt("16,38", "16,4", "16,383"), alt("11,47", "11,5", "11,472")),
             "<p>c) v = *%s:v = √(vx² + vy²)* m/s, α ≈ *%s:tan(α) = vy : vx* °</p>" % (alt("10", "10,0"), alt("53,13", "53,1", "53"))],
            route("Gehen Sie zuerst zum Abzweig H3.", "Richtig.")),
     mc("M2-Addition", "<p>d) Ein Boot fährt mit \\(4\\,\\frac{\\text{m}}{\\text{s}}\\) quer über einen Fluss, die Strömung treibt es mit \\(3\\,\\frac{\\text{m}}{\\text{s}}\\) flussabwärts. Wie schnell bewegt es sich gegenüber dem Ufer?</p>",
@@ -191,7 +186,7 @@ stage("H3", "H3 Hilfe Komponenten", ["M2", "E1"], [
 """),
     image("H3-Bild", IMG["vektor"]),
     blanks("H3-Aufgabe", "<p><strong>Parallelaufgabe:</strong> a) \\(v=10\\,\\frac{\\text{m}}{\\text{s}}\\), \\(\\alpha=60^\\circ\\). b) \\(v_x=5\\,\\frac{\\text{m}}{\\text{s}}\\), \\(v_y=12\\,\\frac{\\text{m}}{\\text{s}}\\).</p>",
-           ["<p>a) v<sub>x</sub> = *%s* m/s, v<sub>y</sub> ≈ *%s* m/s</p>" % (alt("5", "5,0", "5,00"), alt("8,66", "8,7")),
+           ["<p>a) \\(v_{x}\\) = *%s* m/s, \\(v_{y}\\) ≈ *%s* m/s</p>" % (alt("5", "5,0", "5,00"), alt("8,66", "8,7")),
             "<p>b) v = *%s* m/s</p>" % alt("13", "13,0")],
            route("Notieren Sie, wo Sie hängen, und gehen Sie weiter zu E1.", "Richtig. Weiter zu E1."))])
 
@@ -233,11 +228,11 @@ stage("E2", "E2 Versuch Boule", ["E1", "E3"], [
 """),
     image("E2-Bild", IMG["boule"]),
     blanks("E2-Koeffizienten", "<p>Lesen Sie aus den Regressionsfunktionen ab bzw. berechnen Sie:</p>",
-           ["<p>v<sub>x,0</sub> = *%s:Koeffizient von t in x(t)* m/s</p>" % alt("3,71", "3,7"),
-            "<p>v<sub>y,0</sub> = *%s:Koeffizient von t in y(t)* m/s</p>" % alt("2,43", "2,4"),
-            "<p>Abwurfhöhe y<sub>0</sub> = *%s* m</p>" % alt("0,44"),
+           ["<p>\\(v_{x,0}\\) = *%s:Koeffizient von t in x(t)* m/s</p>" % alt("3,71", "3,7"),
+            "<p>\\(v_{y,0}\\) = *%s:Koeffizient von t in y(t)* m/s</p>" % alt("2,43", "2,4"),
+            "<p>Abwurfhöhe \\(y_{0}\\) = *%s* m</p>" % alt("0,44"),
             "<p>Fallbeschleunigung aus dem Versuch: g ≈ *%s:−4,97 entspricht −g : 2* m/s²</p>" % alt("9,94", "9,9"),
-            "<p>Abwurfgeschwindigkeit v<sub>0</sub> ≈ *%s:Vektor aus den Komponenten zusammensetzen* m/s</p>" % alt("4,43", "4,44", "4,4", "4,435"),
+            "<p>Abwurfgeschwindigkeit \\(v_{0}\\) ≈ *%s:Vektor aus den Komponenten zusammensetzen* m/s</p>" % alt("4,43", "4,44", "4,4", "4,435"),
             "<p>Abwurfwinkel α ≈ *%s:tan(α) = vy,0 : vx,0* °</p>" % alt("33,22", "33,2", "33,1", "33,3", "33")],
            route("Nutzen Sie die Tipps. Für v0 und α brauchen Sie M2.", "Richtig.")),
     mc("E2-Abweichung", "<p>Der Versuch liefert \\(g\\approx 9{,}94\\,\\frac{\\text{m}}{\\text{s}^2}\\) statt \\(9{,}81\\,\\frac{\\text{m}}{\\text{s}^2}\\). Welche Erklärungen sind plausibel? (mehrere richtig)</p>",
@@ -283,8 +278,8 @@ stage("E4", "E4 Starthöhe, Kugelstoß", ["E3", "A1"], [
 """),
     image("E4-Bild", IMG["kugelstoss"]),
     blanks("E4-Rechnen", "<p>Eine Kugel wird aus \\(2\\,\\text{m}\\) Höhe mit \\(v_0=8{,}5\\,\\frac{\\text{m}}{\\text{s}}\\) gestoßen.</p>",
-           ["<p>α = 40°: v<sub>x,0</sub> ≈ *%s* m/s, v<sub>y,0</sub> ≈ *%s* m/s</p>" % (alt("6,51", "6,5", "6,511"), alt("5,46", "5,5", "5,464")),
-            "<p>Flugzeit t<sub>E</sub> ≈ *%s:0 = −4,905 t² + 5,46 t + 2 lösen* s</p>" % alt("1,4", "1,40", "1,404", "1,41"),
+           ["<p>α = 40°: \\(v_{x,0}\\) ≈ *%s* m/s, \\(v_{y,0}\\) ≈ *%s* m/s</p>" % (alt("6,51", "6,5", "6,511"), alt("5,46", "5,5", "5,464")),
+            "<p>Flugzeit \\(t_{E}\\) ≈ *%s:0 = −4,905 t² + 5,46 t + 2 lösen* s</p>" % alt("1,4", "1,40", "1,404", "1,41"),
             "<p>Stoßweite w ≈ *%s:w = vx,0 · tE* m</p>" % alt("9,14", "9,1", "9,143", "9,15", "9,13", "9,12", "9,18"),
             "<p>α = 45°: w ≈ *%s* m</p>" % alt("9", "9,0", "9,00", "9,01", "8,99", "9,02")],
            route("Gehen Sie schrittweise vor: Komponenten → Flugzeit aus y(tE) = 0 → Weite.", "Richtig.")),
@@ -307,17 +302,15 @@ stage("A1", "A1 Aufg. 1 Basketball", ["E4", "T1", "A2"], [blanks("A1", """
 stage("T1", "T1 Schritte Aufg. 1", ["A1", "A2"], [blanks("T1", """
 <h3>T1 – Abzweig: Aufgabe 1 Schritt für Schritt</h3>
 <p>\\(v_0=7\\,\\frac{\\text{m}}{\\text{s}}\\), \\(\\alpha=56^\\circ\\)</p>
-""", ["<p>1. Komponenten: v<sub>x,0</sub> ≈ *%s:7 · cos(56°)* m/s, v<sub>y,0</sub> ≈ *%s:7 · sin(56°)* m/s</p>" % (alt("3,91", "3,9", "3,914"), alt("5,8", "5,80", "5,803")),
-      "<p><strong>a)</strong> 2. Flugzeit t<sub>E</sub> = 2 · v<sub>y,0</sub> : g ≈ *%s* s</p>" % alt("1,18", "1,2", "1,183"),
-      "<p>3. Wurfweite w = v<sub>x,0</sub> · t<sub>E</sub> ≈ *%s* m</p>" % alt("4,63", "4,6", "4,631", "4,62", "4,64"),
-      "<p><strong>b)</strong> 2. Ansatz: 0 = −4,905 · t² + 5,80 · t + 2. Positive Lösung: t<sub>E</sub> ≈ *%s:abc-Formel mit a = −4,905; b = 5,80; c = 2* s</p>" % alt("1,46", "1,5", "1,462"),
-      "<p>3. Wurfweite w = v<sub>x,0</sub> · t<sub>E</sub> ≈ *%s* m</p>" % alt("5,72", "5,7", "5,723", "5,71", "5,73")],
+""", ["<p>1. Komponenten: \\(v_{x,0}\\) ≈ *%s:7 · cos(56°)* m/s, \\(v_{y,0}\\) ≈ *%s:7 · sin(56°)* m/s</p>" % (alt("3,91", "3,9", "3,914"), alt("5,8", "5,80", "5,803")),
+      "<p><strong>a)</strong> 2. Flugzeit \\(t_{E}\\) = 2 · \\(v_{y,0}\\) : g ≈ *%s* s</p>" % alt("1,18", "1,2", "1,183"),
+      "<p>3. Wurfweite w = \\(v_{x,0}\\) · \\(t_{E}\\) ≈ *%s* m</p>" % alt("4,63", "4,6", "4,631", "4,62", "4,64"),
+      "<p><strong>b)</strong> 2. Ansatz: 0 = −4,905 · t² + 5,80 · t + 2. Positive Lösung: \\(t_{E}\\) ≈ *%s:abc-Formel mit a = −4,905; b = 5,80; c = 2* s</p>" % alt("1,46", "1,5", "1,462"),
+      "<p>3. Wurfweite w = \\(v_{x,0}\\) · \\(t_{E}\\) ≈ *%s* m</p>" % alt("5,72", "5,7", "5,723", "5,71", "5,73")],
     route("Notieren Sie, bei welchem Schritt Sie hängen, und fragen Sie nach. Weiter zu A2.",
           "Richtig. Rechnen Sie Aufgabe 1 in A1 noch einmal ein, dann weiter zu A2."))])
 
-TABELLE = """<table border="1" cellpadding="5" style="border-collapse:collapse;text-align:center">
-<tr><th>x in m</th><td>0,00</td><td>0,30</td><td>0,71</td><td>1,18</td><td>1,72</td><td>2,28</td><td>2,88</td></tr>
-<tr><th>y in m</th><td>2,02</td><td>2,53</td><td>2,92</td><td>3,26</td><td>3,48</td><td>3,50</td><td>3,34</td></tr></table>"""
+TABELLE = "<p>\\[ \\begin{array}{|c|c|c|c|c|c|c|c|} \\hline x\\ \\text{in m} & 0{,}00 & 0{,}30 & 0{,}71 & 1{,}18 & 1{,}72 & 2{,}28 & 2{,}88 \\\\ \\hline y\\ \\text{in m} & 2{,}02 & 2{,}53 & 2{,}92 & 3{,}26 & 3{,}48 & 3{,}50 & 3{,}34 \\\\ \\hline \\end{array} \\]</p>"
 
 stage("A2", "A2 Aufg. 2 Messwerte", ["A1", "T1", "T2", "A3"], [
     text("A2", f"""
@@ -340,7 +333,7 @@ stage("A2", "A2 Aufg. 2 Messwerte", ["A1", "T1", "T2", "A3"], [
        route("Gehen Sie zum Abzweig T2.", "Richtig.")),
     blanks("A2-Zusatz", "<p><strong>Für Schnelle:</strong> Bestimmen Sie aus der Regression Abwurfwinkel und Abwurfgeschwindigkeit. (Tipp: Bahngleichung in T2.)</p>",
            ["<p>α ≈ *%s:b = tan(α)* °</p>" % alt("54,64", "54,6", "54,7", "55", "54,5"),
-            "<p>v<sub>0</sub> ≈ *%s:a = −g : (2 · v0² · cos²(α))* m/s</p>" % alt("6,57", "6,6", "6,56", "6,58", "6,55", "6,5")],
+            "<p>\\(v_{0}\\) ≈ *%s:a = −g : (2 · v0² · cos²(α))* m/s</p>" % alt("6,57", "6,6", "6,56", "6,58", "6,55", "6,5")],
            route("Nutzen Sie die Bahngleichung aus dem Abzweig T2.", weiter("A3")))])
 
 stage("T2", "T2 Hilfe Bahnkurve", ["A2", "A3"], [
@@ -355,7 +348,7 @@ stage("T2", "T2 Hilfe Bahnkurve", ["A2", "A3"], [
 <p><strong>Prüfen:</strong> Zeichnen Sie Punkte und Parabel gemeinsam. Liegen alle Punkte nahe an der Kurve, ist das Modell „schiefer Wurf ohne Reibung“ plausibel.</p>
 """),
     blanks("T2-Aufgabe", "<p>Die Regression liefert \\(y=-0{,}34\\,x^2+1{,}41\\,x+2{,}07\\). Lesen Sie ab bzw. berechnen Sie:</p>",
-           ["<p>Abwurfhöhe y<sub>0</sub> ≈ *%s* m</p>" % alt("2,07", "2,1"),
+           ["<p>Abwurfhöhe \\(y_{0}\\) ≈ *%s* m</p>" % alt("2,07", "2,1"),
             "<p>α ≈ *%s:tan⁻¹(1,41)* °</p>" % alt("54,64", "54,6", "54,7", "55")],
            route("Fragen Sie nach und gehen Sie weiter zu A3.", "Richtig. Lösen Sie jetzt A2 fertig, dann weiter zu A3."))])
 
@@ -367,10 +360,10 @@ stage("A3", "A3 Aufg. 3 Weitsprung", ["A2", "T2", "T3", "X1", "Ziel"], [
 """),
     image("A3-Bild", IMG["weitsprung"]),
     blanks("A3-Rechnen", "<p>Rechnen Sie:</p>",
-           ["<p>v<sub>x,0</sub> ≈ *%s* m/s, v<sub>y,0</sub> ≈ *%s* m/s</p>" % (alt("9,06", "9,1", "9,063"), alt("4,23", "4,2", "4,226")),
-            "<p>Flugzeit t<sub>E</sub> ≈ *%s:Landung bei y = 0,5 m, Start bei y0 = 0,9 m* s</p>" % alt("0,95", "0,9", "0,948", "0,947"),
+           ["<p>\\(v_{x,0}\\) ≈ *%s* m/s, \\(v_{y,0}\\) ≈ *%s* m/s</p>" % (alt("9,06", "9,1", "9,063"), alt("4,23", "4,2", "4,226")),
+            "<p>Flugzeit \\(t_{E}\\) ≈ *%s:Landung bei y = 0,5 m, Start bei y0 = 0,9 m* s</p>" % alt("0,95", "0,9", "0,948", "0,947"),
             "<p>horizontale Flugstrecke ≈ *%s* m</p>" % alt("8,59", "8,6", "8,589", "8,61", "8,58"),
-            "<p>Sprungweite d<sub>1</sub> + Flugstrecke + d<sub>2</sub> ≈ *%s* m</p>" % alt("9,94", "9,9", "9,939", "9,96", "9,93", "10")],
+            "<p>Sprungweite \\(d_{1}\\) + Flugstrecke + \\(d_{2}\\) ≈ *%s* m</p>" % alt("9,94", "9,9", "9,939", "9,96", "9,93", "10")],
            route("Gehen Sie zum Abzweig T3.", "Richtig.")),
     mc("A3-Bewerten", "<p>Der Weltrekord im Weitsprung liegt bei \\(8{,}95\\,\\text{m}\\). Wie bewerten Sie Ihr Ergebnis?</p>",
        [("Die Schätzung ist zu groß. Die angenommene Absprunggeschwindigkeit von 10 m/s ist für einen Springer sehr hoch, das Modell ist grob.", True, ""),
@@ -384,9 +377,9 @@ stage("T3", "T3 Schritte Aufg. 3", ["A3", "Ziel"], [blanks("T3", """
 <h3>T3 – Abzweig: Aufgabe 3 Schritt für Schritt</h3>
 <p>Koordinatensystem: Der Schwerpunkt startet bei \\((0\\,|\\,0{,}9\\,\\text{m})\\). Die Landung ist erreicht, wenn \\(y(t_E)=0{,}5\\,\\text{m}\\).</p>
 <p>\\[ 0{,}5=-4{,}905\\,t_E^2+4{,}23\\,t_E+0{,}9 \\;\\Longleftrightarrow\\; 0=-4{,}905\\,t_E^2+4{,}23\\,t_E+0{,}4 \\]</p>
-""", ["<p>1. v<sub>x,0</sub> = 10 · cos(25°) ≈ *%s* m/s, v<sub>y,0</sub> = 10 · sin(25°) ≈ *%s* m/s</p>" % (alt("9,06", "9,1"), alt("4,23", "4,2")),
-      "<p>2. positive Lösung der quadratischen Gleichung: t<sub>E</sub> ≈ *%s* s</p>" % alt("0,95", "0,948", "0,947"),
-      "<p>3. Flugstrecke x = v<sub>x,0</sub> · t<sub>E</sub> ≈ *%s* m</p>" % alt("8,59", "8,6", "8,61", "8,58"),
+""", ["<p>1. \\(v_{x,0}\\) = 10 · cos(25°) ≈ *%s* m/s, \\(v_{y,0}\\) = 10 · sin(25°) ≈ *%s* m/s</p>" % (alt("9,06", "9,1"), alt("4,23", "4,2")),
+      "<p>2. positive Lösung der quadratischen Gleichung: \\(t_{E}\\) ≈ *%s* s</p>" % alt("0,95", "0,948", "0,947"),
+      "<p>3. Flugstrecke x = \\(v_{x,0}\\) · \\(t_{E}\\) ≈ *%s* m</p>" % alt("8,59", "8,6", "8,61", "8,58"),
       "<p>4. Sprungweite = 0,6 m + Flugstrecke + 0,75 m ≈ *%s* m</p>" % alt("9,94", "9,9", "9,96", "9,93", "10")],
     route("Fragen Sie nach. Danach geht es zum Ziel.", "Richtig. Lösen Sie A3 fertig, dann zum Ziel oder zu X1–X3."))])
 
@@ -425,7 +418,7 @@ stage("X3", "X3 Knobelaufgabe", ["X2", "Ziel"], [blanks("X3", """
 <p>a) Bei welchem Abwurfwinkel sind Wurfweite \\(w\\) und maximale Wurfhöhe \\(h\\) gleich groß? Setzen Sie die Formeln gleich und vereinfachen Sie.</p>
 """, ["<p>tan(α) = *4:Teilen Sie beide Seiten durch cos(α) · sin(α) · v0² : g*</p>",
       "<p>α ≈ *%s* °</p>" % alt("75,96", "76", "75,9", "76,0"),
-      "<p>b) Ein Ball soll mit v<sub>0</sub> = 10 m/s genau 8 m weit fliegen. Es gibt zwei mögliche Winkel:</p>",
+      "<p>b) Ein Ball soll mit \\(v_{0}\\) = 10 m/s genau 8 m weit fliegen. Es gibt zwei mögliche Winkel:</p>",
       "<p>flacher Wurf: α ≈ *%s:sin(2α) = w · g : v0²* °</p>" % alt("25,86", "25,9", "26"),
       "<p>steiler Wurf: α ≈ *%s:Die Winkel ergänzen sich zu 90°.* °</p>" % alt("64,14", "64,1", "64")],
     route("Nutzen Sie die Tipps.", "Richtig. Weiter zum Ziel."))])

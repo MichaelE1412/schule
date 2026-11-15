@@ -251,14 +251,7 @@ stage("D2", "D2 Grundfläche", 44, 83, ["D1", "H1", "H2", "D3"], [blanks("D2", "
 stage("H2", "H2 Hilfe Grundfläche", 52, 68, ["D2", "D3"], [
     text("H2", """
 <h3>H2 – Abzweig Grundfläche</h3>
-<table border="1" cellpadding="4" style="border-collapse:collapse">
-<tr><td>Quadrat</td><td>\\(a^2\\)</td></tr>
-<tr><td>Rechteck</td><td>\\(a\\cdot b\\)</td></tr>
-<tr><td>Dreieck</td><td>\\(\\frac{1}{2}\\cdot g\\cdot h_g\\)</td></tr>
-<tr><td>Parallelogramm</td><td>\\(g\\cdot h\\)</td></tr>
-<tr><td>Trapez</td><td>\\(\\frac{1}{2}\\cdot(a+c)\\cdot h\\)</td></tr>
-<tr><td>Drachenviereck</td><td>\\(\\frac{1}{2}\\cdot e\\cdot f\\)</td></tr>
-</table>
+<p>\\[ \\begin{array}{|l|l|} \\hline \\textbf{Grundfläche} & \\textbf{Formel} \\\\ \\hline \\text{Quadrat} & a^2 \\\\ \\hline \\text{Rechteck} & a\\cdot b \\\\ \\hline \\text{Dreieck} & \\frac{1}{2}\\cdot g\\cdot h_g \\\\ \\hline \\text{Parallelogramm} & g\\cdot h \\\\ \\hline \\text{Trapez} & \\frac{1}{2}\\cdot(a+c)\\cdot h \\\\ \\hline \\text{Drachenviereck} & \\frac{1}{2}\\cdot e\\cdot f \\\\ \\hline \\end{array} \\]</p>
 <p>Flächen haben Einheiten wie \\(\\text{cm}^2\\). Beim rechtwinkligen Dreieck sind die Katheten Grundseite und Höhe.</p>
 """),
     blanks("H2-Aufgabe", "<p><strong>Parallelaufgabe:</strong> Ein rechtwinkliges Dreieck hat die Katheten \\(4\\,\\text{cm}\\) und \\(7\\,\\text{cm}\\).</p>",
@@ -416,8 +409,8 @@ stage("S4", "S4 Volumen und Oberfläche", 51, 18, ["B3", "Ziel"], [blanks("S4", 
 <p>Berechne die Kanten, die beiden Seitenhöhen und den Oberflächeninhalt. Runde auf zwei Nachkommastellen.</p>
 """, ["<p>a = *9:Setze b = 2a in V = ⅓ · a · b · h ein.* cm</p>",
       "<p>b = *18* cm</p>",
-      "<p>Seitenhöhe zur Kante a: h<sub>a</sub> ≈ *%s:Stützdreieck aus h und b : 2* cm</p>" % alt("21,93", "21,9"),
-      "<p>Seitenhöhe zur Kante b: h<sub>b</sub> ≈ *%s:Stützdreieck aus h und a : 2* cm</p>" % alt("20,5", "20,50"),
+      "<p>Seitenhöhe zur Kante a: \\(h_{a}\\) ≈ *%s:Stützdreieck aus h und b : 2* cm</p>" % alt("21,93", "21,9"),
+      "<p>Seitenhöhe zur Kante b: \\(h_{b}\\) ≈ *%s:Stützdreieck aus h und a : 2* cm</p>" % alt("20,5", "20,50"),
       "<p>O ≈ *%s:O = G + a · h_a + b · h_b* cm²</p>" % alt("728,4", "728,37", "728,1", "728,3", "728,5")],
     route("Nutze die Tipps in den Feldern.", "Richtig. Geh zum Ziel."))])
 
